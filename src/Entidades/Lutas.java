@@ -20,9 +20,13 @@ public class Lutas {
 
     public void Lutar(){
         if(this.aprovado == true){
+            System.out.println("O DESAFIANDO DA NOITE!!!");
             this.desafiado.apresentar();
+            System.out.println("O DESAFIANTE DA NOITE!!!");
             this.desafiante.apresentar();
+
             int vencedor = (int)(Math.random() * 3);
+            System.out.println("===== RESULTADO DA LUTA =====");
             switch(vencedor){
                 case 0:
                 System.out.println("Empatou!"); 
