@@ -7,7 +7,7 @@ public class Lutas {
     private boolean aprovado;
 
     public void marcarLuta( Lutadores l1, Lutadores l2){
-        if((l1.getCategoria() == l2.getCategoria() && l1 != l2)){
+        if((l1.getCategoria().equals(l2.getCategoria()) && l1 != l2)){
             this.aprovado = true;
             this.desafiado = l1;
             this.desafiante = l2;
