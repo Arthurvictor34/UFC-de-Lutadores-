@@ -20,30 +20,30 @@ public class Lutas {
 
     public void Lutar(){
         if(this.aprovado == true){
-            desafiado.apresentar();
-            desafiante.apresentar();
+            this.desafiado.apresentar();
+            this.desafiante.apresentar();
             int vencedor = (int)(Math.random() * 3);
             switch(vencedor){
                 case 0:
                 System.out.println("Empatou!"); 
-                desafiado.empatarLuta();;
-                desafiante.empatarLuta();
+                this.desafiado.empatarLuta();;
+                this.desafiante.empatarLuta();
                 break;
 
                 case 1:
-                System.out.println("Ganhou a luta: " + desafiado.getNome());
-                desafiado.ganharLuta();
-                desafiante.perderLuta();
+                System.out.println("Ganhou a luta: " + this.desafiado.getNome());
+                this.desafiado.ganharLuta();
+                this.desafiante.perderLuta();
                 System.out.println("Atualização do Status do Vencendor!");
-                desafiado.status();
+                this.desafiado.status();
                 break;
 
                 case 2:
-                System.out.println("Ganhou a luta : " + desafiante.getNome());
-                desafiado.perderLuta();
-                desafiante.ganharLuta();
+                System.out.println("Ganhou a luta : " + this.desafiante.getNome());
+                this.desafiado.perderLuta();
+                this.desafiante.ganharLuta();
                 System.out.println("Atualização do Status do Vencendor!");
-                desafiante.status();
+                this.desafiante.status();
                 break;
 
                 default:
